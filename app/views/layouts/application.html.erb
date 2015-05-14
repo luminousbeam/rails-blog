@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>Luminous Blog</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -15,7 +15,16 @@
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
 
-<%= yield %>
+  <div id="left">Testing</div>
 
+  <div id="right">
+
+  <h1>Luminous Blog</h1>
+
+  <%= yield %>
+
+  </div>
+
+<div id="footer">Created by Luminous Beam</div>
 </body>
 </html>

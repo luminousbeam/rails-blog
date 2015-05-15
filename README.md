@@ -4,9 +4,9 @@
 
 User stories:
 <ol>
-  <li>The user should be able to view a quote and when it is clicked upon, the author name will populate.</li>
-  <li>The user should be able to sort quotes by Author.</li>
-  <li>The user should be able to sort quotes by Topic.</li>
-  <li>The user should be able to search the website for an author, word in a quote or topic.</li>
-  <li>The user should be able to share a quote over a social media source such as Twitter or Facebook.</li>
+  <li>The user should be able to create their own account.</li>
+  <li>The user should be able view blog posts they have created(articles).</li>
+  <li>The user should be able to add new blog posts.</li>
+  <li>The user should be able to edit their existing blog posts.</li>
+  <li>The user should be able to delete their existing blog posts.</li>
 </ol>

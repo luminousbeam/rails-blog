@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
+
+<!--HEAD-->
 <head>
-  <title>Luminous Blog</title>
+  <title>Interesting Quotes from Unexpected Sources</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 
+<!--BODY-->
 <body>
-
   <% if notice %>
     <p class="alert alert-success"><%= notice %></p>
   <% end %>
@@ -16,24 +20,49 @@
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
 
-<div id="container">
+<!--CONTAINER-->
+<div id="wrap">
 
-  <div id="sidebar">
-    <a href="http://www.accuweather.com/en/us/washington-dc/20006/weather-forecast/327659" class="aw-widget-legal">
-    </a><div id="awcc1431645898568" class="aw-widget-current"  data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awcc1431645898568"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+  <!--HEADER-->
+  <div id="header">
+    <h1>Interesting Quotes from Unexpected Sources</h1>
   </div>
 
-  <div id="content">
+  <!--NAVIGATION-->
+  <div id="nav">
+    <ul>
+      <li><%= link_to 'My Blog', articles_path %></li>
 
-    <h1>Luminous Blog</h1>
+    </ul>
+  </div>
 
+  <!--MAIN CONTENT-->
+  <div id="main">
     <%= yield %>
+  </div>
+
+  <!--SIDEBAR-->
+  <div id="sidebar">
+
+    <!--WEATHER WIDGET-->
+    <a href="http://www.accuweather.com/en/us/washington-dc/20006/weather-forecast/327659" class="aw-widget-legal">
+    </a>
+    <div id="awcc1431645898568" class="aw-widget-current"  data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awcc1431645898568"></div>
+    <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+
+    <!--CALENDAR WIDGET-->
+    <div align="center" style="margin:15px 0px 0px 0px"><noscript><div align="center" style="width:140px;border:1px solid #ccc;background:#fff ;color: #fff ;font-weight:bold;"><a style="font-size:12px;text-decoration:none;color:#000 ;" href="http://mycalendar.org/"> Calendar</a></div></noscript><script type="text/javascript" src="http://mycalendar.org/calendar.php?group=&widget_number=2&cp3_Hex=8F228f&cp2_Hex=FFFFF3&cp1_Hex=090909&fwdt=200&lab=1"></script></div>
 
   </div>
 
+
+
+  <!--FOOTER-->
+  <div id="footer">
+    <p>Created by LuminousBeam</p>
+  </div>
 
 </div>
-<div id="footer">Created by LuminousBeam</div>
 
 </body>
 </html>

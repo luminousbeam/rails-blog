@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   devise_for :users
   root 'welcome#index'
 
-  #get 'welcome/index'
 
+  #map.log_out 'logout', :controller => 'sessions', :action => 'destroy'
 
-  #get 'welcome#index'
+  
   resources :articles do
     resources :comments
   end

@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
   <% if notice %>
@@ -15,16 +16,24 @@
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
 
-  <div id="left">Testing</div>
+<div id="container">
 
-  <div id="right">
+  <div id="sidebar">
+    <a href="http://www.accuweather.com/en/us/washington-dc/20006/weather-forecast/327659" class="aw-widget-legal">
+    </a><div id="awcc1431645898568" class="aw-widget-current"  data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awcc1431645898568"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+  </div>
 
-  <h1>Luminous Blog</h1>
+  <div id="content">
 
-  <%= yield %>
+    <h1>Luminous Blog</h1>
+
+    <%= yield %>
 
   </div>
 
-<div id="footer">Created by Luminous Beam</div>
+
+</div>
+<div id="footer">Created by LuminousBeam</div>
+
 </body>
 </html>

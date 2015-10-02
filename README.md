@@ -1,5 +1,3 @@
-# Project3
-
 <h2>Inspirational quotes from unexpected sources, blog</h2>
 
 User stories:
